@@ -1,0 +1,249 @@
+.section3 {
+    columns: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 540px;
+    background-color: 	#fff9fb;
+}
+/*skills*/
+.circle-wrap {
+    float: left;
+    font-size: 10px;
+    margin: 30px 90px 40px 50px;
+    width: 150px;
+    height: 150px;
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #b24543
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill1,
+.circle-wrap .circle .fill2,
+.circle-wrap .circle .fill3,
+.circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #fcedf2;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #464646;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.mask .fill,
+.mask .fill1,
+.mask .fill2,
+.mask .fill3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: rgb(197, 44, 41);
+}
+
+.mask.full,
+.circle .fill {
+    animation: fill ease-in-out 4s;
+    transform: rotate(150deg);
+}
+
+.mask.full1,
+.circle .fill1 {
+    animation: fill1 4s linear;
+    transform: rotate(140deg);
+}
+
+.mask.full2,
+.circle .fill2 {
+    animation: fill2 4s linear;
+    transform: rotate(160deg);
+}
+.mask.full3,
+.circle .fill3 {
+    animation: fill3 4s linear;
+    transform: rotate(120deg);
+}
+
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(150deg);
+    }
+}
+
+@keyframes fill1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(140deg);
+    }
+}
+@keyframes fill2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(160deg);
+    }
+}
+@keyframes fill3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+/*Programming Skill */
+.Programskill p {
+    font-size: 24px;
+    font-weight: bold;
+}
+.Proskill {
+    font-weight: 400;
+    font-size: 22px;
+    font-family: "Comic Sans MS";
+    padding-top: 2px;
+}
+.percentage{
+    font-size: 16px;
+    vertical-align: middle;
+    font-family: "Comic Sans MS";
+}
+li.Proskill {
+    color: #272727;
+    display: inline-flex;
+    margin: 6px;
+    width: 7em;
+    border-right-style: solid;
+    border-right-color: rgb(187, 36, 33);
+    border-width: 400px;
+}
+
+/*網頁設計*/
+@keyframes html {
+    from {
+        border-right-width: 0px;
+    }
+    to {
+        border-right-width: 380px;
+    }
+}
+
+@keyframes css {
+    from {
+        border-right-width: 0px;
+    }
+    to {
+        border-right-width:300px;
+    }
+}
+
+@keyframes JavaScript {
+    from {
+        border-right-width: 0px;
+    }
+    to {
+        border-right-width: 200px;
+    }
+}
+
+/*程式能力*/
+@keyframes c {
+    from {
+        border-right-width: 0px;
+    }
+
+    to {
+        border-right-width: 340px;
+    }
+}
+
+@keyframes java {
+    from {
+        border-right-width: 0px;
+    }
+
+    to {
+        border-right-width: 300px;
+    }
+}
+
+@keyframes Python {
+    from {
+        border-right-width: 0px;
+    }
+
+    to {
+        border-right-width: 180px;
+    }
+}
+
+@keyframes R {
+    from {
+        border-right-width: 0px;
+    }
+
+    to {
+        border-right-width: 160px;
+    }
+}
+
+/*網頁設計*/
+#Html {
+    animation: html 4s linear;
+    border-right-width: 380px;
+    }
+#Css {
+    animation: css 3s linear;
+    border-right-width: 300px
+}
+
+#JavaScript {
+    animation: JavaScript 2s linear;
+    border-right-width: 200px
+}
+
+/*程式能力*/
+#c {
+    animation: c  4s linear;
+    border-right-width: 340px
+}
+
+#Java {
+    animation: java 3s linear;
+    border-right-width: 300px
+}
+
+#Python {
+    animation: Python 2s linear;
+    border-right-width: 180px
+}
+
+#R {
+    animation: R 2s linear;
+    border-right-width: 160px
+}

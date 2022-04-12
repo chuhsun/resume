@@ -1,0 +1,137 @@
+.photo{
+    height: 410px;
+    width: 410px;
+}
+img.me {
+    width: 70%;
+    height: 70%;
+    float: left;
+    padding: 25px;
+    border-radius: 100%;    
+}
+.petersu{
+    font-style: oblique;
+    letter-spacing: 3px;
+    clear: both;
+    font-size: 24px;
+    font-weight: 1000;
+    padding-left: 30px;
+}
+.section1 {
+    background-color: #fffafa;
+    width: 850px;
+    height: 420px;
+    columns: 2;
+    grid-template-columns: 0.5fr 1.5fr;
+    column-gap: 0px;
+    position: absolute;
+    padding-right:1px ;
+    float: left;
+}
+#about{
+    padding: 10px 5px 20px 0px;    
+}
+.aboutme {
+    font-family:"Comic Sans MS";
+    font-size: 26px;
+}
+.aboutme1 {
+    font-size: 24px;
+}
+
+.aboutme2 {
+    font-size: 20px;
+    font-family: "Comic Sans MS","微軟正黑體";
+}
+
+.socialimg img{
+    height: 45px;
+    width: 45px;
+    padding-right: 20px;
+    transition: width 1s, height 1s,transform 1s;  
+}
+#fb:hover,#ig:hover,#email:hover{
+    width: 50px;
+    height: 50px;
+    transform :rotate(360deg);
+}
+#content{
+    font-size: 20px;
+    font-weight: 549;
+}
+strong.edu{
+    font-size: 22px;    
+}
+
+#content a{
+  color: black;
+}
+section.timeline-outer {
+    width: 80%;
+    margin: 0 auto;
+  }
+.section2{
+    background-color: #fffafa;
+    float: right;
+    width: 32%;
+    height: 420px;
+}
+.section22{background-color: #ffffff;}
+.school{
+    width: 8%;
+    height: 8%;
+    vertical-align: middle;
+}
+.edutimeline {
+    border-left: 8px solid #811f1a;
+    border-bottom-right-radius:10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #333;
+    margin: 10px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1em;
+    padding: 1px 10px 1px 20px;
+    list-style: none;
+    text-align: left;
+  }
+.edutimeline .event {
+    border-bottom: 1px solid #97110a4b;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  
+.edutimeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  
+.edutimeline .event:before,
+.edutimeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+.edutimeline .event:before {
+    left: -177.5px;
+    color: #ffffff;
+    content: attr(data-date);
+    text-align: right;    
+    font-size: 18px;
+    min-width: 120px;
+  }
+  
+.edutimeline .event:after {
+    box-shadow: 0 0 0 8px #bb231b;
+    left: -30px;
+    background: #ffffff;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    content: "";
+    top: 5px;
+}

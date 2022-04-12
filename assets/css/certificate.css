@@ -1,0 +1,159 @@
+.section4 {
+    height: 1620px;
+    padding-top: 10px;
+    background-color: #fffafd;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    padding: 1px 0 1px 0px;
+}
+.timeline img {
+    width: 100%;
+    height: 100%;
+    transition: width 2s, height 2s;
+}
+
+#chinese:hover,
+#ppt:hover,
+#acc:hover,
+#word:hover,
+#excel:hover,
+#computerC:hover,
+#computerB:hover {
+    width: 105%;
+    height: 105%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 960px;
+    margin: 2 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgb(73, 43, 49);
+    top: 0;
+    bottom: 0;
+    left: 51.9%;
+
+}
+
+.timeline li {
+    width: 50%;
+    padding: 5px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.timeline li:nth-child(odd) {
+    float: left;
+    padding-right: 100px;
+}
+
+.timeline li:nth-child(even) {
+    float: right;
+    padding-left: 100px;
+    transform: translateY(-50%);
+    top: 300px
+}
+
+.timeline li:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #921923;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.timeline li div {
+    display: block;
+    border: 1px solid #921923;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(165, 76, 81, 0.247);
+    transition: .2s .2s;
+}
+
+.timeline div h2 {
+    font-size: 24px;
+    color: #555;
+
+    transition: .2s .2s;
+}
+
+.timeline h2::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #ebb1b6;
+    transition: .2s .05s linear;
+}
+
+.timeline li:nth-child(odd) h2::before {
+    right: -13px;
+}
+
+.timeline li:nth-child(even) h2::before {
+    left: -17px;
+}
+
+.timeline h2::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    z-index: 0;
+    background-color: #921923;
+    transition: .2s;
+}
+
+
+.timeline li:nth-child(odd) h2::after {
+    left: 100%;
+    right: 0;
+}
+
+.timeline li:nth-child(even) h2::after {
+    right: 100%;
+    left: 0px;
+}
+
+.timeline div {
+    color: #666;
+    line-height: 1.5;
+    font-weight: 300;
+    transition: .1s .1s;
+}
+
+.timeline div:hover {
+    box-shadow: none;
+    background: -webkit-linear-gradient(#921919, #92194b);
+
+}
+
+.timeline div:hover h2 {
+    color: #fff;
+}
+
+.timeline li:nth-child(odd) div:hover h2::after {
+    left: calc(100% - 100px);
+}
+
+.timeline li:nth-child(even) div:hover h2::after {
+    right: calc(100% - 100px);
+}
