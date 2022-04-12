@@ -28,6 +28,7 @@ header {
     border-bottom-left-radius:15px ;
 }
 header h1 {
+    color: #FFFFFF;
     font-size: 40px;
     font-family:"Comic Sans MS";
     font-weight: 200;
